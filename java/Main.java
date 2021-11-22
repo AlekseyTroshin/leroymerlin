@@ -12,10 +12,10 @@ public class Main {
         FileHandler fileHandler2 = new FileHandler("./../data/task2.txt");
         FileHandler fileHandler3 = new FileHandler("./../data/task3.txt");
 
-        String stringOneLine = fileHandler2.readFileOneLine();
+        String oneLine = fileHandler2.readFileOneLine();
         ArrayList<String> arrayStrings3 = fileHandler3.readFile();
 
-        Task2 task2 = new Task2(stringOneLine);
+        Task2 task2 = new Task2(oneLine);
         Task3 task3 = new Task3(arrayStrings3);
 
         System.out.println("\n============\n" + ANSI_RED + 
