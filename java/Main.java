@@ -13,10 +13,10 @@ public class Main {
         FileHandler fileHandler3 = new FileHandler("./../data/task3.txt");
 
         String oneLine = fileHandler2.readFileOneLine();
-        ArrayList<String> arrayStrings3 = fileHandler3.readFile();
+        ArrayList<String> arrayStrings = fileHandler3.readFile();
 
         Task2 task2 = new Task2(oneLine);
-        Task3 task3 = new Task3(arrayStrings3);
+        Task3 task3 = new Task3(arrayStrings);
 
         System.out.println("\n============\n" + ANSI_RED + 
             "Извините не успел сделать 1 задачу ! \n" +
